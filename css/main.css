@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+*{
+    margin:3px;
+    padding:3px;
+    font-size:16px;
+    font-family:'Trade winds', 'Helvetica', 'sans-serif';
+
+}
+body{
+    background-image:url('../img/whiteconcrete.jpg');
+    background-size:86% 200px; 
+    background-repeat: no-repeat;
+    background-position: 20px 100px;
+    background-attachment: fixed;
+
+    display:grid;
+    grid-template-columns:30% 30% 30% ;
+    grid-template-rows: 30vh 50vh 50vh 30vh;
+    grid-template-areas:"logo navigation navigation " 
+    "about-me about-me about-me " 
+    "education experience contact"  
+    "social-links social-links social-links";
+    
+}
+
+.logo{
+    grid-area:logo ;
+    text-align:center;
+    border-style:double;
+    
+}
+.navigation{
+    grid-area:navigation ;
+    text-align: center;
+    border-style: solid;
+   
+}
+
+.about-me{
+    grid-area:about-me ;
+    text-align: center;
+    border-style: solid;
+    
+}
+
+.education{
+    grid-area:education ;
+    text-align: center;
+    border-style: solid;
+   
+}
+.experience{
+    grid-area:experience ;
+    text-align: center;
+    border-style: solid;
+   
+}
+.contact{
+    grid-area:contact ;
+    text-align: center;
+    border-style: solid;
+}
+    
+.social-links{
+    grid-area:social-links ;
+    text-align: center;
+    border-style: solid;
+    
+}
+
+@media screen and (min-width: 500px)
+{
+    body{
+        display:grid;
+        grid-template-columns:30% 30% 30% ;
+        grid-template-rows: 30vh 50vh 50vh 30vh;
+        grid-template-areas:"logo navigation navigation " 
+        "about-me about-me about-me " 
+        "education experience contact"  
+        "social-links social-links social-links";
+    }
+
+
+
+    
+.logo{
+    grid-area:logo ;
+    text-align: center;
+    border-style: solid;
+   
+}
+.navigation{
+    grid-area:navigation ;
+    text-align: center;
+    border-style: solid;
+}
+
+.about-me{
+    grid-area:about-me ;
+    text-align: center;
+    border-style: solid;
+   
+}
+
+.education{
+    grid-area:education ;
+    text-align: center;
+    border-style: solid;
+    
+}
+.experience{
+    grid-area:experience ;
+    text-align: center;
+    border-style: solid;
+    
+}
+.contact{
+    grid-area:contact ;
+    text-align: center;
+    border-style: solid;
+   
+}
+.social-links{
+    grid-area:social-links ;
+    text-align: center;
+    border-style: solid;
+    
+}
+}
+
+
+@media screen and (min-width:1024px)
+{
+    body{
+        display:grid;
+        grid-template-columns:30% 30% 30% ;
+        grid-template-rows: 30vh 50vh 50vh 30vh;
+        grid-template-areas:"logo navigation navigation " 
+        "about-me about-me about-me " 
+        "education experience contact"  
+        "social-links social-links social-links";
+    }
+
+
+
+    
+.logo{
+    grid-area:logo ;
+    text-align: center;
+    border-style: solid;
+   
+}
+.navigation{
+    grid-area:navigation ;
+    text-align: center;
+    border-style: solid;
+}
+
+.about-me{
+    grid-area:about-me ;
+    text-align: center;
+    border-style: solid;
+   
+}
+
+.education{
+    grid-area:education ;
+    text-align: center;
+    border-style: solid;
+    
+}
+.experience{
+    grid-area:experience ;
+    text-align: center;
+    border-style: solid;
+    
+}
+.contact{
+    grid-area:contact ;
+    text-align: center;
+    border-style: solid;
+   
+}
+.social-links{
+    grid-area:social-links ;
+    text-align: center;
+    border-style: solid;
+    
+}
+}
