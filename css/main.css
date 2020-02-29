@@ -8,15 +8,21 @@
 
 }
 body{
+
     background-image:url('../img/whiteconcrete.jpg');
-    background-size:86% 200px; 
+    background-size:88% 280px; 
     background-repeat: no-repeat;
-    background-position: 20px 100px;
+    background-position: 20px 20px;
     background-attachment: fixed;
+    
+
+
+   /* background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,77,29,0.8883928571428571) 50%, rgba(252,176,69,1) 100%);*/
 
     display:grid;
     grid-template-columns:30% 30% 30% ;
-    grid-template-rows: 30vh 50vh 50vh 30vh;
+    grid-template-rows: auto  auto auto auto;
     grid-template-areas:"logo navigation navigation " 
     "about-me about-me about-me " 
     "education experience contact"  
@@ -26,15 +32,16 @@ body{
 
 .logo{
     grid-area:logo ;
-    text-align:center;
-    border-style:double;
+    color: palevioletred;
+   
     
+    
+
 }
 .navigation{
     grid-area:navigation ;
-    text-align: center;
-    border-style: solid;
-   
+    padding-left: 200px;
+    
 }
 
 .about-me{
@@ -67,6 +74,27 @@ body{
     text-align: center;
     border-style: solid;
     
+}
+
+
+nav li ul a{
+    border-style: solid;
+    border-color:blue;
+    border-radius: 20px;
+    object-position: left;
+    color:palevioletred;
+}
+section img{
+    float:inline-start;
+    border-radius: 100px;
+
+}
+section h1{
+    font-size: 42px;
+    color:palevioletred;
+}
+section p{
+    text-align:right;
 }
 
 @media screen and (min-width: 500px)
@@ -74,7 +102,7 @@ body{
     body{
         display:grid;
         grid-template-columns:30% 30% 30% ;
-        grid-template-rows: 30vh 50vh 50vh 30vh;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas:"logo navigation navigation " 
         "about-me about-me about-me " 
         "education experience contact"  
@@ -86,14 +114,15 @@ body{
     
 .logo{
     grid-area:logo ;
-    text-align: center;
-    border-style: solid;
+    color: palevioletred;
+    
    
 }
 .navigation{
     grid-area:navigation ;
-    text-align: center;
-    border-style: solid;
+    padding-left: 200px;
+    
+
 }
 
 .about-me{
@@ -125,9 +154,10 @@ body{
     grid-area:social-links ;
     text-align: center;
     border-style: solid;
-    
+   
 }
 }
+
 
 
 @media screen and (min-width:1024px)
@@ -135,7 +165,7 @@ body{
     body{
         display:grid;
         grid-template-columns:30% 30% 30% ;
-        grid-template-rows: 30vh 50vh 50vh 30vh;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas:"logo navigation navigation " 
         "about-me about-me about-me " 
         "education experience contact"  
@@ -147,14 +177,14 @@ body{
     
 .logo{
     grid-area:logo ;
-    text-align: center;
-    border-style: solid;
    
 }
 .navigation{
     grid-area:navigation ;
-    text-align: center;
-    border-style: solid;
+    padding-left: 200px;
+
+    
+    
 }
 
 .about-me{
@@ -189,3 +219,39 @@ body{
     
 }
 }
+
+
+
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+  }
+
+
+
+  
+  .screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; 
+  }
