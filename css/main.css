@@ -3,22 +3,26 @@
 *{
     margin:3px;
     padding:3px;
+    border: 3px;
     font-size:16px;
     font-family:'Trade winds', 'Helvetica', 'sans-serif';
 
 }
+html{
+    box-sizing: border-box;
+}
 body{
 
-    background-image:url('../img/whiteconcrete.jpg');
+   /* background-image:url('../img/whiteconcrete.jpg');
     background-size:88% 280px; 
     background-repeat: no-repeat;
     background-position: 20px 20px;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
     
 
 
-   /* background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,77,29,0.8883928571428571) 50%, rgba(252,176,69,1) 100%);*/
+   background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,77,29,0.8883928571428571) 50%, rgba(252,176,69,1) 100%);
 
     display:grid;
     grid-template-columns:30% 30% 30% ;
@@ -32,7 +36,7 @@ body{
 
 .logo{
     grid-area:logo ;
-    color: palevioletred;
+    color:rgb(122, 7, 7)
    
     
     
@@ -41,7 +45,7 @@ body{
 .navigation{
     
     grid-area:navigation ;
-    padding-left: 100px;
+    padding-left: 250px;
     overflow: hidden;
 
     
@@ -50,34 +54,111 @@ body{
 .about-me{
     grid-area:about-me ;
     text-align: center;
-    border-style: solid;
+    
     
 }
 
 .education{
     grid-area:education ;
     text-align: center;
-    border-style: solid;
+    
    
 }
 .experience{
     grid-area:experience ;
     text-align: center;
-    border-style: solid;
+    
    
 }
 .contact{
     grid-area:contact ;
     text-align: center;
-    border-style: solid;
 }
     
 .social-links{
     grid-area:social-links ;
     text-align: center;
-    border-style: solid;
 }
     
+
+.navigation a {
+    float: left;;
+    font-size: 16px;
+    color:rgb(122, 7, 7);
+    padding: 8px;
+    text-decoration: none;
+    border:solid;
+    border-radius: 20px;
+    box-sizing: content-box;
+    margin: 8px;
+  }
+
+
+
+.about-me img{
+    
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    float:inline-start;
+    border-style:solid;
+    border-radius : 100px;
+    object-position: 50% 50%;
+    
+}
+.about-me h1{
+    
+    font-size: 42px;
+    color:rgb(122, 7, 7);
+}
+
+.about-me  h1  i{
+    padding-top:20px ;
+    border-style: solid;
+    border-radius: 30px;
+}
+.about-me  p{
+    
+    text-align:justify;
+}
+#edufevicon{
+    list-style: none;
+    
+}
+#edufevicon li{
+    position:relative;
+    padding:8px 8px 8px 42px;
+   
+}
+#edufevicon li img{
+    position:absolute;
+    /*size: 20px 20px;*/
+    top:0;
+    left:0;
+    width:32px;
+    height:32px;
+    
+}
+
+.education h2,
+.experience h2,
+.contact h2{
+    
+    font-size: 32px;
+    color:rgb(122, 7, 7);
+}
+
+.education  h2  i,
+.experience h2 i,
+.contact h2 i{
+    padding-top: 20px ;
+    border-style: solid;
+    border-radius: 30px;
+}
+.education p{
+    text-align: justify;
+}
+
 
 
 @media screen and (min-width: 500px)
@@ -98,13 +179,11 @@ body{
     
 .logo{
     grid-area:logo ;
-    color: palevioletred;
-    
-   
+    color:rgb(122, 7, 7)
 }
 .navigation{
     grid-area:navigation ;
-    padding-left: 100px;
+    padding-left: 250px;
     overflow: hidden;
     
 
@@ -113,33 +192,29 @@ body{
 .about-me{
     grid-area:about-me ;
     text-align: center;
-    border-style: solid;
+    
    
 }
 
 .education{
     grid-area:education ;
     text-align: center;
-    border-style: solid;
+    
     
 }
 .experience{
     grid-area:experience ;
     text-align: center;
-    border-style: solid;
-    
+     
 }
 .contact{
     grid-area:contact ;
     text-align: center;
-    border-style: solid;
-   
 }
-.social-links{
+  .social-links{
     grid-area:social-links ;
     text-align: center;
-    border-style: solid;
-   
+      
 }
 }
 
@@ -162,11 +237,12 @@ body{
     
 .logo{
     grid-area:logo ;
+    color:rgb(122, 7, 7)
    
 }
 .navigation{
     grid-area:navigation ;
-    padding-left: 100px;
+    padding-left: 250px;
     overflow: hidden;
 
 
@@ -177,58 +253,30 @@ body{
 .about-me{
     grid-area:about-me ;
     text-align: center;
-    border-style: solid;
-   
+      
 }
 
 .education{
     grid-area:education ;
     text-align: center;
-    border-style: solid;
+   
     
 }
 .experience{
     grid-area:experience ;
     text-align: center;
-    border-style: solid;
-    
+       
 }
 .contact{
     grid-area:contact ;
     text-align: center;
-    border-style: solid;
+   
    
 }
 .social-links{
     grid-area:social-links ;
     text-align: center;
-    border-style: solid;
+   
     
 }
 }
-
-
-
-section img{
-    float:inline-start;
-    border-radius: 100px;
-
-}
-section h1{
-    font-size: 42px;
-    color:palevioletred;
-}
-section p{
-    text-align:right;
-}
-
-.navigation a {
-    float: left;
-    font-size: 16px;
-    color: blue;
-    text-align: center;
-    padding: 8px 8px;
-    text-decoration: none;
-    border:solid;
-    border-radius: 20px;
-  }
