@@ -7,37 +7,19 @@
     border: 3px;
     font-size:16px;
     font-family:'Trade winds', 'Helvetica', 'sans-serif';
-
 }
-@keyframes my-animation{/*we get to define at which point in an animation changes occur*/
-    0%{
-        transform:scale(1);/*what change should change at this point in the animation*/
 
-    }
-    50%{
-        transform: scale(1.2);
-
-    }
-    75%{
-        transform: scale(1.5);
-    }
-    100%
-    {
-        transform: scale(1);
-    }
-}
 
 body{
 
-   /* background-image:url('../img/whiteconcrete.jpg');
+    background-image:url('../img/whiteconcrete.jpg');
     background-size:88% 280px; 
     background-repeat: no-repeat;
     background-position: 20px 20px;
-    background-attachment: fixed;*/
+    background-attachment: fixed;
+    backface-visibility: inherit;
     
-
-
-   background: rgb(131,58,180);
+     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,77,29,0.8883928571428571) 50%, rgba(252,176,69,1) 100%);
 
     display:grid;
@@ -52,7 +34,7 @@ body{
 
 .logo{
     grid-area:logo ;
-    color:rgb(122, 7, 7)
+    color:black;
    
     
     
@@ -95,7 +77,11 @@ body{
     grid-area:social-links ;
     text-align: center;
 }
-    
+
+.navigation h1{
+    text-align: center;
+    font-size: 48px;
+}
 
 .navigation a {
     float: left;
@@ -124,13 +110,13 @@ body{
     object-position: 50% 50%;
     
 }
-.about-me h1{
+.about-me h2{
     
     font-size: 42px;
     color:rgb(122, 7, 7);
 }
 
-.about-me  h1  i{
+.about-me  h2  i{
     padding-top:20px ;
     border-style: solid;
     border-radius: 30px;
@@ -177,9 +163,8 @@ body{
     text-align: justify;
 }
 
-.conatact form{
-    text-align: justify;
-}
+
+
 
 .social-links h3{
     text-align: center;
@@ -210,13 +195,13 @@ body{
 
 #social-media-links a:hover .fab,
 #social-media-links a:focus .fab,
-#social-media-links a:active .fab,{
+#social-media-links a:active .fab{
     color:rgba(231, 105, 32,0.5);
 }
 
 #social-media-links a:hover .fas,
 #social-media-links a:focus .fas,
-#social-media-links a:active .fas,{
+#social-media-links a:active .fas{
     color:rgba(231, 105, 32,0.5);
 }
 
@@ -271,7 +256,7 @@ body{
     
 .logo{
     grid-area:logo ;
-    color:rgb(122, 7, 7)
+    color: black;
 }
 .navigation{
     grid-area:navigation ;
@@ -329,7 +314,7 @@ body{
     
 .logo{
     grid-area:logo ;
-    color:rgb(122, 7, 7)
+    color: black;
    
 }
 .navigation{
