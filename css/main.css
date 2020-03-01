@@ -18,10 +18,8 @@ body{
     background-position: 20px 20px;
     background-attachment: fixed;
     backface-visibility: inherit;
-    
-     background: rgb(131,58,180);
+    background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,77,29,0.8883928571428571) 50%, rgba(252,176,69,1) 100%);
-
     display:grid;
     grid-template-columns:30% 30% 30% ;
     grid-template-rows: auto  auto auto auto;
@@ -59,18 +57,23 @@ body{
 .education{
     grid-area:education ;
     text-align: center;
-    
+    border: solid;
+    border-radius: 20px;
    
 }
 .experience{
     grid-area:experience ;
     text-align: center;
+    border: solid;
+    border-radius: 20px;
     
    
 }
 .contact{
     grid-area:contact ;
     text-align: center;
+    border: solid;
+    border-radius: 20px;
 }
     
 .social-links{
@@ -163,7 +166,9 @@ body{
     text-align: justify;
 }
 
-
+.logo h3{
+    padding-left: 100px;
+}
 
 
 .social-links h3{
