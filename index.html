@@ -2,7 +2,7 @@
 <html>
     <head>
         <Title>MY RESUME GRID </Title>
-        <meta name="">
+        <meta charset="utf-8" name="rathi" content="resume" >
         <link rel="icon" href="img/woman.png">
         <link rel="stylesheet" href="./css/main.css">
         <script src="./js/scripts.js"></script>
@@ -10,21 +10,22 @@
         
     </head>
     <body>
-
-           <h3 class="logo"><img src="./img/logo.png" width="100" height="80">RATHI RAMAKRISHNAN <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <h3 class="logo"><img src="./img/logo.png" width="100" height="80">RATHI RAMAKRISHNAN <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Software Developer)</h3>
-           
-            <div class="navigation" ><h1 >RESUME</h1>
-            <a href="index.html" class="button" >HOME</a>
+        
+            <nav class="navigation" role="navigation"><h1>RESUME</h1>
+             <a href="index.html"  >HOME</a>
              <a href="#about-me">ABOUT ME</a>
              <a href="#education">EDUCATION</a>
              <a href="#experience">EXPERIENCE</a>
              <a href="#contact">CONTACT</a>
+             
            
-        </div>
-       
+            </nav>
+           
         
-        <section class="about-me">
+        <article class="about-me">
             
             <h2 id="about-me"><i class="fas fa-laptop-code"></i>
 
@@ -44,7 +45,8 @@
                 I AM LOOKING FOR THE POSITION OF A WEB DEVELOPER IN A COMPANY WHICH WILL UTILIZE MY EXCELLENT KNOWLEDGE.
 
             </p>
-        </section>
+        </article>
+        
         <section class="education"><h2 id="education"><i class="fas fa-user-graduate"></i>EDUCATION</h2>
             <p>
                 <ol id="edufevicon">
@@ -59,32 +61,36 @@
                <h4>VERSIONING AND OTHER TOOLS</h4>GIT ,GITHUB.
             </p>.
         </section>
+
         <section class="experience"><h2 id="experience"><i class="fas fa-chalkboard-teacher"></i> EXPERIENCE</h2>
             <p> GOAL ORIENTED WEB DEVELOPER WITH A BACHELORS DEGREE IN COMPUTER SCIENCE AND LOOKING TO    ENHANCE MY            PROFESSIONAL 
                 EXPERIENCE WITH AN IT COMPANY SPECIALIZING IN WEB DEVELOPMENT .ARMED WITH A DEEP SENSE OF RESPONSIBILITY AND 
                 POSESSING VERY HIGH LEVELS OF ENTHUSIASM TO GIVE MY 100% FOR ANY ENDEAVOUR.</p>
         </section>
             <section class="contact"><h2 id="contact"><i class="fas fa-address-card"></i>CONTACT</h2>
-             <form action="submit" method="POST">
-               <label for="fname">FIRST NAME</label>
-                <input type="text" name="fname" value="FIRST NAME">
-                <label for="lname">LAST NAME</label>
-                <input type="text" name="lname" value="LAST NAME">
+              <form action="submit" method="POST" align="right">
+                  <fieldset>
+                      <legend>Have A Question?</legend>
+                    FIRST NAME:
+                <input type="text" name="fname" value="FIRST NAME" align="right"/><br>
+                  LAST NAME:
+                <input type="text" name="lname" value="LAST NAME" align="right"/></br>
                 <label for="phoneno">PHONE NO</label>
                 <input type="text" name="phoneno" value="PHONE NO">
                 <label for="email">EMAIL</label>
                 <input type="text" name="email" value="EMAIL">
                 <label for="messages">MESSAGES</label>
                 <input type="textarea" name="messages" value="Enter your Messaes">
-                <input type="button" name="submit" value="SUMBIT">
-
+                <input type="button" name="submit" value="SUMBIT" >
+            </fieldset>
             </form>
         </section>
+        
         <footer  class="social-links">
              <h3>FOLLOW US</h3>
                 <ul id="social-media-links">
                     <li>
-                        <a href="http://facebook.com" target="_blank">
+                        <a href="http://facebook.com" target="_blank" role="presentation">
                             <i class="fab fa-facebook-square">Facebook</i>
                             <span class="screen-reader-text">Facebook</span>
                         </a>
@@ -103,6 +109,13 @@
                         </a>
                     </li>
                 </ul>
+                <h3>REACH ME</h3>
+                <i class="fas fa-phone-square-alt">5879840125</i>
+                <i class="fas fa-envelope-square">rathiram7583@gmail.com</i>
+
+
+
+                
             
         </footer>
         

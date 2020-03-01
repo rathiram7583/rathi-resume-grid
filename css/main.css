@@ -23,6 +23,7 @@ body{
     display:grid;
     grid-template-columns:30% 30% 30% ;
     grid-template-rows: auto  auto auto auto;
+    
     grid-template-areas:"logo navigation navigation " 
     "about-me about-me about-me " 
     "education experience contact"  
@@ -81,25 +82,32 @@ body{
     text-align: center;
 }
 
+
 .navigation h1{
     text-align: center;
     font-size: 48px;
+    border-bottom: 3px solid #5D6063;
 }
 
 .navigation a {
     float: left;
-    
+   /* display: block;*/
     color:rgb(122, 7, 7);
   
     appearance: button;
     margin:8px;
-    padding: 8px;
+    padding: 8px 5px 8px 5px;
     text-decoration: none;
     border:3px solid black;
     border-radius: 20px;
     cursor: pointer;
 }
+
+
+    .contact>label{
     
+        color: blueviolet;
+    }
   
 
 .about-me img{
@@ -164,10 +172,6 @@ body{
 }
 .education p{
     text-align: justify;
-}
-
-.logo h3{
-    padding-left: 100px;
 }
 
 
