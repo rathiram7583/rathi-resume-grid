@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
 *{
+    box-sizing: border-box;
     margin:3px;
     padding:3px;
     border: 3px;
@@ -8,9 +9,24 @@
     font-family:'Trade winds', 'Helvetica', 'sans-serif';
 
 }
-html{
-    box-sizing: border-box;
+@keyframes my-animation{/*we get to define at which point in an animation changes occur*/
+    0%{
+        transform:scale(1);/*what change should change at this point in the animation*/
+
+    }
+    50%{
+        transform: scale(1.2);
+
+    }
+    75%{
+        transform: scale(1.5);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
 }
+
 body{
 
    /* background-image:url('../img/whiteconcrete.jpg');
@@ -161,7 +177,11 @@ body{
     text-align: justify;
 }
 
-footer h3{
+.conatact form{
+    text-align: justify;
+}
+
+.social-links h3{
     text-align: center;
 }
 #social-media-links{
@@ -178,16 +198,27 @@ footer h3{
 }
 
 #social-media-links .fab{
-    color:rgba(231, 105, 32,1);
-  font-size:32px;
+    color:blue;
+   font-size:40px;
 }
+
+#social-media-links .fas{
+    color:blue;
+   font-size:40px;
+}
+
 
 #social-media-links a:hover .fab,
 #social-media-links a:focus .fab,
-#social-media-links a:active .fab{
+#social-media-links a:active .fab,{
     color:rgba(231, 105, 32,0.5);
 }
 
+#social-media-links a:hover .fas,
+#social-media-links a:focus .fas,
+#social-media-links a:active .fas,{
+    color:rgba(231, 105, 32,0.5);
+}
 
 
 .screen-reader-text {
