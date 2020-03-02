@@ -89,12 +89,9 @@ body{
     border-bottom: 3px solid #5D6063;
 }
 
-.navigation a {
+.navigation a{
     float: left;
-   /* display: block;*/
-    color:rgb(122, 7, 7);
-  
-    appearance: button;
+    color:blue;
     margin:8px;
     padding: 8px 5px 8px 5px;
     text-decoration: none;
@@ -104,10 +101,12 @@ body{
 }
 
 
-    .contact>label{
-    
-        color: blueviolet;
+    .contact form{
+      float: right;
+        color: blue;
+
     }
+
   
 
 .about-me img{
